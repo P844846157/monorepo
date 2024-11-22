@@ -1,0 +1,31 @@
+{
+  "extends": "@vue/tsconfig/tsconfig.dom.json",
+  "include": [],
+  "exclude": ["node_modules"],
+
+  "compilerOptions": {
+    // reflect-metadata
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    // Projects
+    "composite": true
+  },
+
+  "references": [
+    // Apps
+    {
+      "path": "./apps/doc"
+    },
+
+    // Packages
+    {
+      "path": "./packages/core"
+    },
+    {
+      "path": "./packages/shared"
+    },
+    {
+      "path": "./packages/ui"
+    }
+  ]
+}
